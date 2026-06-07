@@ -1,0 +1,21 @@
+:root {
+  --bg: #14101f;
+  --bg-2: #1c1733;
+  --ink: #efe7d2;
+  --muted: #b6ad97;
+  --gold: #c9a24b;
+  --line: rgba(201,162,75,.35);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--bg); color: var(--ink); }
+body {
+  font-family: "Spectral", Georgia, serif;
+  /* лёгкая «звёздная пыль» + виньетка вместо плоского фона */
+  background:
+    radial-gradient(1200px 600px at 70% -10%, rgba(201,162,75,.10), transparent 60%),
+    radial-gradient(900px 500px at 10% 110%, rgba(120,90,200,.12), transparent 60%),
+    var(--bg);
+  min-height: 100vh;
+}
+.display { font-family: "Cormorant Garamond", Georgia, serif; }
+a { color: inherit; }
